@@ -1,0 +1,28 @@
+CREATE DATABASE database_name [IF NOT EXISTS];
+USE database_name;
+CREATE USER 'username'@'hostname' IDENTIFIES BY 'password';
+GRANT permissions ON database_name.table_name TO 'username'@'hostname' [WITH GRANT OPTION];
+CREATE TABLE table_name [IF NOT EXISTS] (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    field_name_2 TYPE,
+    field_name_3 TYPE,
+    PRIMARY KEY(id)
+    );
+SHOW TABLES;
+DESCRIBE table_name;
+SHOW CREATE TABLE table_name;
+DROP USER 'username'@'hostname';
+DROP TABLE table_name [IF EXISTS];
+DROP DATABASE database_name;
+INSERT INTO table_name (field1, field2,...)
+VALUES ('value1','value2', ...);
+
+INSERT INTO quotes (author_first_name, author_last_name, content)
+VALUES('Charles','Lemagne','Knowing a second language is to have a second soul.')
+
+INSERT INTO books (title, author_first_name, author_last_name)
+VALUES ('Great Work','David','Sturt'),
+('The Guardians','John','Grisham'),
+('Catch and Kill','Ronan','Farrow');
+
+SELECT * FROM books WHERE genre IS NULL (pulls all the books that have NULL as the genre)
