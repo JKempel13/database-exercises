@@ -9,3 +9,4 @@ DELETE from albums WHERE genre = 'disco';
 -- Albums by 'Eagles'
 SELECT name AS 'Albums by ''Eagles''' from albums WHERE artist = 'Eagles';
 DELETE from albums WHERE artist = 'Eagles';
+SELECT * from albums;
