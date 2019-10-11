@@ -1,4 +1,4 @@
-USE employees_db;
+USE employees;
 
 SELECT * from employees WHERE first_name IN ('Irena','Vidya','Maya');
 
