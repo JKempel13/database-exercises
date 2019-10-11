@@ -2,7 +2,7 @@ USE employees_db;
 
 SELECT * from employees WHERE first_name IN ('Irena','Vidya','Maya');
 
-SELECT * from employees WHERE last_name LIKE 'E%';
+SELECT * from employees WHERE last_name LIKE 'E%' ORDER BY emp_no desc;
 
 SELECT * from employees WHERE hire_date LIKE '199%';
 
