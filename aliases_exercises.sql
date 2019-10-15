@@ -1,3 +1,3 @@
-USE employees_db;
+USE employees;
 
-SELECT last_name, first_name from employees AS 'full name' LIMIT 10;
+SELECT CONCAT(emp_no, ' - ',last_name, ', ', first_name) AS full_name, birth_date AS DOB from employees LIMIT 10;
