@@ -21,4 +21,4 @@ WHERE last_name LIKE '%q%'
 GROUP BY first_name, last_name
 ORDER BY COUNT(*) desc;
 
-SELECT COUNT(*) AS 'How many with these names', gender AS 'M/F' from employees WHERE first_name IN ('Irena','Vidya','Maya') GROUP BY (gender);
+SELECT COUNT(*) AS 'How many with these names', gender AS 'M/F' from employees WHERE first_name IN ('Irena','Vidya','Maya') GROUP BY gender;
