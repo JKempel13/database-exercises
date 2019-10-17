@@ -126,10 +126,10 @@ GROUP BY owners.address;
 #
 # # output user name and role for all records with a non-null user name and role name
 #
-# SELECT users.name, roles.name
-# FROM users
-# JOIN roles -- same as INNER JOIN
-# ON roles.id = users.role_id;
+SELECT users.name, roles.name
+FROM users
+JOIN roles -- same as INNER JOIN
+ON roles.id = users.role_id;
 #
 #
 # # output user name and their role name for all matches and all users regardless of null roles
