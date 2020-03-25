@@ -24,6 +24,12 @@ CREATE TABLE Students (
     PRIMARY KEY (id,student_id)
 );
 
+CREATE TABLE quiz_questions (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    question VARCHAR (255),
+    answer VARCHAR (255)
+);
+
 
 INSERT INTO Administrators (first_name, last_name, email, gender)
 VALUES ('Blaine', 'Likly', 'bliklyd@chicagotribune.com', 'M'),

@@ -8,7 +8,6 @@ CREATE TABLE roles (
    name VARCHAR(100) NOT NULL,
    PRIMARY KEY (id)
 );
-
 CREATE TABLE users (
    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
    name VARCHAR(100) NOT NULL,
@@ -54,3 +53,5 @@ ON roles.id = users.role_id;
 SELECT users.name, roles.name
 from users JOIN roles
 ON users.role_id = roles.id;
+
+describe users;
